@@ -1,0 +1,40 @@
+The <meta> tag provides information about the HTML document, not the content itself.
+- meta = information about the webpage
+
+Examples of meta tags:
+a. meta charset="UTF-8"
+utf-8: It encode or transform the characters to (binary) bytes and bytes to characters which make computer to understand the text.
+charset: collection of characters. 
+   - It specifies the character encoding for the HTML document.
+
+b. meta name="viewport" content="width=device-width, initial-scale=1.0"
+viewport: the visible area of a webpage on different devices. (responsive design)
+<meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Programming">
+//they used to show in website search results when we search for related topics.
+
+<!-- Video -->
+<video controls width="300">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+<!-- Audio -->
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Iframe -->: It is used to embed another HTML page within the current page and also we can add other resources like videos, maps etc.
+<iframe src="https://example.com" width="300" height="200"></iframe>
+
+<!--Table
+cellpadding: space inside each cell
+cellspacing: space between the cells
+Row: horizontal line of cells
+column: vertical line of cells
+Rowspan: top-bottom
+Colspan: left-right
+-->
+
+<!-- Form: It is used to collect user input -->
+ It is inline tag.
+ label for and input id should be same.
+ name: It is used to identify the form data after submission.
