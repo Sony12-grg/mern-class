@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #2A3342;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin-bottom: 80px;
+        }
+        .logo{
+            display: flex;
+            color: white;
+            gap: 20px;
+            align-items: center;
+        }
+        .icon{
+            font-size: 22px;
+        }
+        nav{
+            display: flex;
+            gap: 30px;
+            padding-top: 10px;
+        }
+        .auth{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .auth button{
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+         background-color: #29D166
+        }
+        a{
+            text-decoration: none;
+            color: #5B6476;
+        }
+       section{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        gap: 50px;
+       }
+       .tag{
+        background-color: #29D166;
+        padding: 4px 10px;
+        font-size: 18px;
+        border-radius: 15px;
+       }
+       .container h1{
+        color: white;
+        margin: 30px 0;
+        font-size: 55px;
+        /* font-weight: bold; */
+       }
+       .container p{
+        color:  #5B6476;
+        line-height: 1.6;
+        margin-bottom: 50px;
+       }
+         .content-button{
+          display: flex;
+          gap: 20px;
+         }
+       .b-1{
+        background-color: #29D166;
+        border: none;
+        padding: 15px 25px;
+        border-radius: 10px;
+       }
+       .b-2{
+        background-color: #5B6476;
+        color: white;
+        border: none;
+        padding: 15px 25px;
+        border-radius: 10px;
+       }
+       .img-1 img{
+        border-radius: 15px;
+        margin-right: 25px;
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+         <i class="fa-solid fa-house icon" style="color: #21764C" ></i>
+         <h1>Flex</h1>
+        </div> 
+        <nav>
+            <a href="">Products</a>
+            <a href="">Features</a>
+            <a href="">Resources</a>
+            <a href="">Pricing</a>
+         </nav>
+         <div class="auth">
+            <a href="#">Log In</a>
+            <button class="sign-up">Sign Up</button>
+         </div>
+    </header>
+    <section>
+      <div class="container">
+       <span class="tag">Header</span>
+       <h1>A Small business is only as good as its tools.</h1>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eaque exercitationem modi incidunt ratione similique debitis molestias officiis! Accusantium quibusdam laborum esse eveniet? Quo libero voluptatibus, ullam porro corrupti corporis.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod rerum ipsa exercitationem recusandae deleniti a.
+       </p>
+
+       <div class="content-button">
+        <button class="b-1">Request a Demo</button>
+        <button class="b-2">Sign Up</button>
+       </div>
+      </div>
+
+      <div class="img-1">
+       <img src="images/img1.jpg" alt="Nature Image" style="width: 500px; height:400px;">
+      </div>
+    </section>
+</body>
+</html>
