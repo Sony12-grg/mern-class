@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Project</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        display: flex;
+        padding: 20px 20px;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .logo{
+        display: flex;
+        gap: 10px;
+        letter-spacing: 5px;
+    }
+
+    nav{
+        display: flex;
+        gap: 20px;
+    }
+    nav a{
+        text-decoration: none;
+        letter-spacing: 5px;
+        color:#504f4f;
+    }
+    .bgimg{
+       background-image: url(architect.jpg);
+       height: 600px;
+       width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: baseline;
+    }
+    .text span{
+        /* height: 50px;
+        width: 50px; */
+        background-color: #7f7e7e;
+        padding: 15px;
+        font-size: 20px;
+        letter-spacing: 4px;
+        /* padding: 50px 50px; */
+    }
+    .text h4{
+        color: white;
+
+    }
+    .projects{
+      padding: 0px 20px;
+      font-size: 18px;
+     margin-bottom: 80px;
+    }
+    .projects .h-1{
+        margin-bottom:50px;
+    }
+    .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+     .house img{
+        width: 100%;
+        /* height: 200px; */
+        object-fit: cover;
+     }
+     .house{
+        position: relative;
+     } 
+     .house h3{
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        font-size: 16px;
+        position: absolute;
+        top: 0;
+     }
+     .abouttext{
+        padding: 0px 20px;
+        /* margin-bottom: 60px; */
+     }
+     .abouttext h3{
+        margin-bottom: 40px;
+     }
+     .abouttext p{
+        line-height: 1.9;
+        margin-bottom: 60px;
+        margin-top: 10px;
+     }
+   .shareholders{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 80px;
+          /* justify-content: space-between; */
+   }
+   .shareholder {
+    width: 950px;
+    padding: 0 20px;
+   }
+   .shareholder img{
+    width: 100%;
+    margin-bottom: 10px;
+    /* vertical-align: middle; */
+   }
+    
+   .shareholdertext{
+     display: flex;
+     flex-direction: column;
+        gap: 20px;
+       
+   }
+   .shareholdertext h2{
+     color: #7f7e7e;
+     font-size: 16px;
+   }
+    .shareholdertext button{
+        background-color: #dcdada;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .contactform{
+     padding: 0px 20px;
+    }
+    .contactform h3{
+        margin-bottom: 30px;
+    }
+    .contactform p{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .contactform form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contactform input{
+        width: 100%;
+        padding: 12px;
+        border: 2px solid rgb(194, 192, 192);
+    }
+    .contactform button{
+        margin-top: 30px;
+        padding: 12px 20px;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: none;
+        margin-bottom: 50px;
+        width: 180px;
+    }
+    .map{
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 5px;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        padding: 40px 0px;
+        text-align: center;
+    }
+    footer a{
+        /* text-decoration: none; */
+        color: white;
+        cursor: pointer;
+    }
+
+    footer a:hover{
+        color: rgb(91, 156, 91);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h4>BR</h4>
+            <p>Architects</p>
+        </div>
+        <nav>
+            <a href="">Projects</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <div class="bgimg">
+            <div class="text">
+              <span>BR</span>
+              <h1>Architects</h1>
+            </div>
+        </div>
+        <div class="projects">
+            <h3 class="h-1">Projects</h3>
+            
+            <div class="images">
+                <div class="house">
+                  <img src="house1.jpg" alt="house 1" >
+                  <h3>Summer House</h3>
+                </div>
+                <div class="house">
+                  <img src="house2.jpg" alt="house 2" >
+                  <h3>Brick House</h3>
+                </div>
+                <div class="house">
+                  <img src="house3.jpg" alt="house 3" > 
+                  <h3>Renovated</h3>
+                </div>
+                <div class="house">  
+                  <img src="house4.jpg" alt="house 4" >
+                 <h3>Modern Villa</h3>
+                </div>
+                <div class="house">
+                  <img src="house5.jpg" alt="house 5" >
+                  <h3>Family Home</h3>
+                </div>
+                <div class="house">
+                <img src="house6.jpg" alt="house 6">
+                <h3>Brick House</h3>
+                </div>
+                <div class="house">
+                <img src="house7.jpg" alt="house 7" >
+                <h3>Renovated</h3>
+                </div>
+                <div class="house">
+                <img src="house8.jpg" alt="house 8" >
+                <h3>Summer House</h3>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+         <div class="abouttext">
+            
+            <h3>About</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi quos consectetur dignissimos, nesciunt hic? Ipsam saepe voluptatum impedit debitis quia voluptatem numquam sed id, laudantium ea excepturi sint repellendus. Est blanditiis eos, quam veniam sint saepe sunt consequatur ducimus eveniet, optio, rem exercitationem animi sit ea maiores voluptatibus temporibus!lorem20
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi quos consectetur dignissimos, nesciunt hic? Ipsam exercitationem animi sit ea maiores voluptatibus temporibus!lorem20
+            </p>
+        </div>
+        <div class="shareholders">
+            <div class="shareholder">
+               <img src="team1.jpg" alt="Team Member 1">
+               <div class="shareholdertext">
+                 <h3>John Doe</h3>
+                 <h2>CEO & Founder</h2>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iste mollitia magni harum vitae? Impedit!</p>
+                 <button>Contact</button>
+               </div>
+            </div>
+            <div class="shareholder">
+               <img src="team2.jpg" alt="Team Member 2">
+               <div class="shareholdertext">
+                 <h3>Jane Smith</h3>
+                  <h2>Lead Architect</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iste mollitia magni harum vitae? Impedit!</p>
+                  <button>Contact</button>
+               </div>
+            </div>
+            <div class="shareholder">
+                <img src="team3.jpg" alt="Team Member 3" >
+                <div class="shareholdertext">
+                  <h3>Emily Johnson</h3>
+                  <h2>Project Manager</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iste mollitia magni harum vitae? Impedit!</p>
+                  <button>Contact</button>
+                </div>
+            </div>
+                <div class="shareholder">
+                    <img src="team4.jpg" alt="Team Member 4" >
+                    <div class="shareholdertext">
+                      <h3>Michael Brown</h3>
+                      <h2>Senior Designer</h2>    
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iste mollitia magni harum vitae? Impedit!</p>
+                      <button>Contact</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="contactform">
+             <h3>Contact</h3>
+             <p>Lets get  in touch and talk about your next project.</p>
+             <form>
+            
+                    <input type="text" placeholder="Name">
+    
+                    <input type="email" placeholder="Email">
+              
+               
+                    <input type="text" placeholder="Subject">
+              
+                    <input type="text" placeholder="Comment">
+
+              <button >Send Message</button>
+             </form>
+         
+        </div>
+        <div class="map">
+           <img src="map.jpg" alt="map">
+        </div>
+    </section>
+    <footer>
+        <h4>Powered by <span><a href="https://www.w3schools.com/w3css/tryw3css_templates_architect.htm">w3.css</a></span></h4>
+    </footer>
+</body>
+</html>
