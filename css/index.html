@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            padding: 10px;
+        }
+        li:first-child{
+            color: red;
+        }
+        li:nth-child(4){
+            color: blue;
+        }
+        li:nth-child(2n+1){
+            color: green;
+        }
+        .bx h1:hover{
+            background-color: red;
+        }
+        .bx p::before{
+            content: "Look Here-";
+            color: blue;
+            font-size: 23px;
+        }
+        .bx p::after{
+            content: " - The End";
+            color: green;
+            font-size: 23px;
+        }
+        span{
+            color: yellow;
+        }
+        input[type="text"]{
+            background-color: red;
+            color: white;
+        }
+        input:focus{
+            color: black;
+        }
+        input[type="email"]{
+            background-color: blue;
+            color: white;
+        }
+        input[type="email"]:focus{
+            color: rgb(200, 25, 25);
+        }
+        p,span,h3{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+    <div class="bx">
+        <h1>Hello</h1>
+        <p>Lorem ipsum <span>dolor</span>sit amet.</p>
+    </div>
+    <div>
+        <input type="text" placeholder="username">
+        <input type="email" placeholder="@gmail.com">
+    </div>
+    <div>
+        <p>Hello</p>
+        <span>sello</span>
+        <h3>hello</h3>
+    </div>
+    
+</body>
+</html>

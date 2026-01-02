@@ -1,0 +1,58 @@
+<!--
+border-radius
+It's type:
+if border-radius: 20px; => all corners are rounded with 20px radius
+if border-radius: 20px 10px; => top-left and bottom-right corners are rounded with 20px radius, top-right and bottom-left corners are rounded with 10px radius
+if border-radius: 20px 10px 30px; => top-left corner is rounded with 20px radius, top-right and bottom-left corners are rounded with 10px radius, bottom-right corner is rounded with 30px radius
+if border-radius: 20px 10px 30px 40px; => top
+
+box-shadow
+: 5px 5px 5px 5px black;
+It's type:  
+horizontal-offset vertical-offset blur-radius spread-radius color
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            box-shadow: -5px -5px 15px 10px black;
+        }
+        #box1 {
+            background-color: lightblue;
+            border-radius:25px ;
+        
+        }
+        #box2 {
+            background-color: lightgreen;
+            border-radius: 25px;
+            position: absolute;
+            left: 200px;
+        }
+        #box3 {
+            background-color: lightcoral;
+            border-radius: 25px;
+            position: absolute;
+            left: 400px;
+            top: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+</body>
+</html>

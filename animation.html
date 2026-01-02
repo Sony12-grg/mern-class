@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+       .box{
+    width: 80px;
+    height: 80px;
+    background: cyan;
+    /* position: relative; */
+    animation: moveBox 8s normal infinite;
+}
+
+@keyframes moveBox {
+    0% {
+        transform: translate(0, 0);        /* start (left) */
+    }
+    100% {
+        transform: translate(300px, 0px);    /* move right */
+    }
+    /* 50% {
+        transform: translate(300px, 200px);/* move down (right side) */
+    }
+    /* 75% { */
+        /* transform: translate(0, 200px);    move left (bottom) */
+    /* } */
+    /* 100% { */
+        /* transform: translate(0, 0);         */ 
+/* }
+} */
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

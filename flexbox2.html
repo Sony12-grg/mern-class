@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #E9B551;
+            padding: 40px;
+        }
+        .container{
+            height: auto;
+            max-width: 1200px;
+            background-color: #E9B551;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1.main-title{
+            text-align: center;
+            font-size: 48px;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+        .card{
+            height: auto;
+            width: 280px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover{
+            transform: translateY(-10px);
+        }
+      .img-box{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid;
+      }
+      .angular .img-box{
+        border-color: #DD0031;
+        background-color: #DD0031;
+      }
+      .react .img-box{
+        border-color: #61DAFB;
+        background-color: white;
+      }
+      .vue .img-box{
+        border-color: #42B883;
+        font-size: 24px; 
+        margin-bottom: 15px;
+        color: #2c3e50;
+      }
+      .card p{
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #555;
+        margin-top: 20px;
+        font-size: 20px; 
+        margin-bottom: 15px;
+      }
+      p{
+        text-align: center;
+        padding: 0 10px;
+        font-size: 14px;
+      }
+      .another-box{
+        height: 400px;
+        width: 800px;
+        background-color: lightgreen;
+        border-radius: 5px;
+        display: flex;;
+        
+      }
+      .one{
+        height: 100%;
+        width: 35%;
+        background-color: rgb(228, 167, 53);
+      }
+      .one h2{
+        text-transform: uppercase;
+        margin: 200px 0 20px 50px;
+        
+      }
+      .one p{
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+      }
+      .one button{
+       margin: 0 50px;
+       padding:10px 20px;
+       border-radius: 10px;
+       background-color: white;
+       border: none;
+       color: red;
+      }
+      .two{
+        height: 100%;
+        width: 35%;
+        background-color: rgb(53, 228, 167);
+      }
+      .three{
+        height: 100%;
+        width: 35%;
+        background-color: rgb(167, 53, 228);
+      }
+    </style>
+<h1 class="main-title">CSS Flexbox Cards</h1>
+    
+    <div class="container">
+        <div class="card angular"> 
+           <div class="img-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="angular logo">
+           </div>
+           <h4>Angular</h4>
+           <p>Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with Angular.</p>
+        </div>
+        
+        <div class="card react">
+           <div class="img-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react logo">
+           </div>
+           <h4>React</h4>
+           <p>React is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies.</p>
+        </div>
+        
+        <div class="card vue">
+           <div class="img-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="vue logo">
+           </div>
+           <h4>Vue</h4>
+           <p>Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.</p>
+        
+        <div class="react"></div>
+        <div class="vue"></div> 
+    </div>
+
+    <div class="another-box">
+        <div class="one">
+            <h2>Sedans</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsum velit repudiandae aspernatur, ab voluptatem enim delectus ullam eligendi blanditiis!</p>
+            <button>Learn More</button>
+        </div>
+        <div class="two"></div>
+        <div class="three"></div>
+
+    </div>
+</body>
+</html>
